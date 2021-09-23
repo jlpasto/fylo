@@ -1,0 +1,20 @@
+
+
+//Font Family
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Raleway:ital,wght@0,400;0,700;1,300&display=swap');
+$font-body: 'Open Sans', sans-serif;
+$font-heading: 'Raleway', sans-serif;
+
+//Colors
+//Main
+$darkBlue-intro: hsl(217, 28%, 15%);
+$darkBlue-main: hsl(218, 28%, 13%);
+$darkBlue-footer:  hsl(216, 53%, 9%);
+$darkBlue-testimonial: hsl(219, 30%, 18%);
+//Accent
+$cyan: hsl(176, 68%, 64%);
+$blue: #4FC4D5;
+$lightBlue: #7be1f1;
+$lightRed: hsl(0, 100%, 63%);
+//Neutral
+$white: hsl(0, 0%, 100%);

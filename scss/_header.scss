@@ -1,0 +1,49 @@
+.header {
+    background-color: $darkBlue-intro;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 3rem;
+
+    @include breakpoint-up(large){
+        padding-top: 7.4rem;
+    }
+
+    &__logo {
+
+        img {
+            width: 8rem;
+
+            @include breakpoint-up(large){
+                width: 17.6rem;
+            }
+        }
+    }
+
+    &__nav {
+
+        &-items {
+            display: inline;
+
+            &:not(:last-child){
+                margin-right: 2.4rem;
+
+                @include breakpoint-up(large){
+                    margin-right: 5.8rem;
+                }
+            }
+        }
+
+        &-links {           
+            font-family: $font-heading;
+            transition: all 10ms ease-in-out;
+
+            &:hover {
+                font-weight: 600;
+                text-decoration: underline;
+            }
+        }
+
+    }
+}

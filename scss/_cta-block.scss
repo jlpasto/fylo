@@ -1,0 +1,68 @@
+.cta-block {
+
+    position: relative;
+    margin-bottom: -15rem;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 110rem;
+    text-align: center;
+
+    &__box {
+        
+        padding: 3.5rem;
+        background-color: $darkBlue-intro;
+        border-radius: 1rem;
+        box-shadow: 0 0 0.5rem 0.1rem rgba(0, 0, 0, 0.24);
+
+        @include breakpoint-up(medium){
+            padding: 5rem 7.5rem;
+            padding-bottom: 3rem;
+        }
+    }
+
+
+    &__heading {
+        font-size: 1.6rem;
+        font-weight: 700;
+        margin-bottom: 2rem;
+
+        @include breakpoint-up(large){
+            font-size: 3rem;
+        }
+    }
+
+    &__p {
+        margin: 0 auto;
+        margin-bottom: 3.5rem;
+        max-width: 70rem;
+        
+    }
+
+    &__email {
+       
+        margin-bottom: 2.2rem;
+
+        @include breakpoint-up(large){
+            max-width: 60%;
+            margin-right: 2rem;
+        }
+    }
+
+    &__submit {
+        background-color: $blue;
+        color: $white;
+        font-family: $font-heading;
+        font-weight: 600;
+        cursor: pointer;
+        transition: background-color 150ms ease-in-out;
+
+        @include breakpoint-up(large){
+            max-width: 25%;
+        }
+
+        &:hover {
+            background-color: $lightBlue;
+    
+        }
+    }
+}

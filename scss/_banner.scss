@@ -1,0 +1,71 @@
+.banner {
+
+    max-width: 150rem;
+    margin-bottom: 13.5rem;
+    margin-left: auto;
+    margin-right: auto;
+
+    @include breakpoint-up(large){
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        
+    }
+
+    &__image {
+
+        @include breakpoint-up(large){
+            flex-basis: 110rem;
+        }
+
+        img {
+            width: 100%;   
+            max-width: 75rem;
+            padding: 1.5rem;
+        }
+        
+    }
+
+    &__text {
+        padding: 1.5rem; 
+
+        @include breakpoint-up(large){
+            margin-left: 5rem;
+        }
+    }
+
+    &__heading {
+        margin-bottom: 2rem;
+        
+        @include breakpoint-up(large){
+            max-width: 40rem;
+            font-size: 3.5rem;
+        }
+    }
+
+    &__sub-heading {
+
+        margin-bottom: 2rem;
+    }
+
+    &__link {
+        color: $cyan;
+        position: relative;
+
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: -0.5rem;
+            left: 0;
+            width: 14rem;
+            height: 0.15rem;
+            background-color: #65e2d9;
+        }
+        
+    }
+
+    &__arrow {
+        margin-left: 0.1rem;
+        transform: translateY(0.25rem);
+    }
+}
